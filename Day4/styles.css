@@ -1,0 +1,40 @@
+main {
+  display: grid;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 10px;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "left right"
+    "footer footer"
+  ;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 150px 200px 200px 50px;
+}
+
+
+header {
+  background-color: yellow;
+  grid-area: header;
+}
+
+nav {
+  background-color: green;
+  grid-area: nav;
+}
+
+.left {
+  background-color: red;
+  grid-area: left;
+}
+
+.right {
+  background-color: brown;
+  grid-area: right;
+}
+
+footer {
+  background-color: teal;
+  grid-area: footer;
+}
